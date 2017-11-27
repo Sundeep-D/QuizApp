@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:background="#e3e7ed">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+             >
+
+            <RelativeLayout
+                android:id="@+id/q1lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E6B1BEBC"
+                android:paddingBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/qno1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:text="1. "
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q1"
+                    android:textSize="30sp"
+                    android:layout_toRightOf="@id/qno1"
+                    android:layout_toEndOf="@id/qno1"
+                    />
+
+                <CheckBox
+                    android:id="@+id/qno1cb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno1"
+                    android:layout_marginTop="60dp"
+                    android:text="Rich Miner"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+
+                    />
+                <CheckBox
+                    android:id="@+id/qno1cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno1cb1"
+                    android:layout_marginTop="0dp"
+                    android:text="Steve Jobs"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+
+
+                    />
+                <CheckBox
+                    android:id="@+id/qno1cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno1cb2"
+                    android:layout_marginTop="0dp"
+                    android:text="Andy Rubin"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/q2lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E6B1BEBC"
+                android:layout_below="@id/q1lay"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/qno2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:text="2. "
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q2"
+                    android:textSize="30sp"
+                    android:layout_toRightOf="@id/qno2"
+                    android:layout_toEndOf="@id/qno2"
+                    />
+
+                <RadioButton
+                    android:id="@+id/qno2cb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno2"
+                    android:layout_marginTop="60dp"
+                    android:text="Amazon"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="ques2rb1"
+                    />
+                <RadioButton
+                    android:id="@+id/qno2cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno2cb1"
+                    android:layout_marginTop="0dp"
+                    android:text="Apple"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="ques2rb2"
+
+                    />
+                <RadioButton
+                    android:id="@+id/qno2cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno2cb2"
+                    android:layout_marginTop="0dp"
+                    android:text="Google"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="ques2rb3"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/q3lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E6B1BEBC"
+                android:layout_below="@id/q2lay"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <TextView
+                    android:id="@+id/qno3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:text="3. "
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q3"
+                    android:textSize="30sp"
+                    android:layout_toRightOf="@id/qno3"
+                    android:layout_toEndOf="@id/qno3"
+                    />
+                <EditText
+                    android:id="@+id/edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qno3"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="ex. Scanner Class"
+                    android:inputType="textCapWords"/>
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/q4lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E6B1BEBC"
+                android:layout_below="@id/q3lay"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/qno4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:text="4. "
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/q4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q4"
+                    android:textSize="30sp"
+                    android:layout_toRightOf="@id/qno4"
+                    android:layout_toEndOf="@id/qno4"
+                    />
+
+                <RadioButton
+                    android:id="@+id/qno4cb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno4"
+                    android:layout_marginTop="60dp"
+                    android:text="Indirect Manipulation"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="ques4rb1"
+                    />
+                <RadioButton
+                    android:id="@+id/qno4cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno4cb1"
+                    android:layout_marginTop="0dp"
+                    android:text="Direct Manipulation"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="ques4rb2"
+                    />
+                <RadioButton
+                    android:id="@+id/qno4cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno4cb2"
+                    android:layout_marginTop="0dp"
+                    android:text="Touch Interface"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="ques4rb3"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/q5lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E6B1BEBC"
+                android:layout_below="@id/q4lay"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/qno5"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:text="5. "
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/q5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q5"
+                    android:textSize="30sp"
+                    android:layout_toRightOf="@id/qno5"
+                    android:layout_toEndOf="@id/qno5"
+                    />
+
+                <RadioButton
+                    android:id="@+id/qno5cb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno5"
+                    android:layout_marginTop="60dp"
+                    android:text="IOS"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="ques5rb1"
+                    />
+                <RadioButton
+                    android:id="@+id/qno5cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno5cb1"
+                    android:layout_marginTop="0dp"
+                    android:text="Wix"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="ques5rb2"
+
+                    />
+                <RadioButton
+                    android:id="@+id/qno5cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qno5cb2"
+                    android:layout_marginTop="0dp"
+                    android:text="Android"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="32dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="ques5rb3"
+                    />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@id/qno5cb1"
+                    android:src="@drawable/android"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="130dp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/laysubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_below="@id/q5lay"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/bt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUBMIT"
+                    android:background="#374ab7"
+                    android:textSize="30sp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="20dp"
+                    android:onClick="submit_answer"
+                    />
+              <TextView
+                  android:id="@+id/result"
+                  android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                  android:text=""
+                  android:textSize="20sp"
+                  android:textStyle="italic"
+                  android:layout_below="@id/bt1"
+                  android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

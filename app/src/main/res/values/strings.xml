@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="q1">Android was founded by?</string>
+    <string name="q2">Android was developed by?</string>
+    <string name="q3">Which class is used to switch from one activity to another activity in Android?</string>
+    <string name="q4">Android User Interface is mainly based on?</string>
+    <string name="q5">The given Logo refers to?</string>
+</resources>
